@@ -1,103 +1,168 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+html {
+    background-color: #d7d9dd;
+}
+
 body {
-  font-family: 'Meriweather', serif;
-  font-size: 20px;
-  background-color: #F2F1E8;
-  width: 1280px;
+    font-family: 'Merriweather', serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 20px;
+    background-color: #F2F1E8;
+    width: 1280px;
+    height: 1060px;
+    margin: auto;
 }
 
 .nav-row {
     display: flex;
-    background-color: #F2F1E8;
-    justify-content: space-around;
+    background-color: #FFFFFF;
+    justify-content: space-between;
     align-content: center;
-    padding: 8px;
+    padding-right: 300px;
+    align-items: center;
+    margin-bottom: 10px;
     font-family: 'Roboto';
     text-transform: uppercase;
     list-style-type: none;
-    }
+    height: 70px;
+}
 
+#logo {
+  width: 48px;
+  height: 48px;
+}
 .nav-item a {
-    /*text-decoration: none;*/
     color: #2B2F26;
     font-size: 17px;
 }
 
 .nav-item a:hover {
-  background: #967343;
+  color: #967343;
 }
 
 .nav-item a:active {
-  background: #968772;
+  color: #968772;
 }
 
+.page-header {
+  height: 235px;
+  padding-top: 35px;
+}
 .header-content {
 	text-align: center;
+  font-family: 'Merriweather', serif;
 }
 
-.main-images {
-	position: relative;
+.main-heading {
+  font-size: 450%;
+  margin-bottom: auto;
 }
 
-.image-products {
-	list-style-type: none;
-	/*flex properties*/
+.sub-heading {
+  font-size: 250%;
+}
+
+.images-row1 {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1260px;
+  height: 386px;
+  margin: auto;
+  /*border: 1px solid black;*/
+  margin-bottom: 10px;
 }
 
-.single-pot {
-	height: 300px;
-	width: 300px;
-	margin: 20px;
-	background-size: cover;
-	background-position: center;
-	/*border-radius: 40px 10px;*/
-}
-
-.img-txt{
-	position: relative;
-	left: 20%;
-	top: 80%;
-	font-family: 'Meriweather';
-	/*font-size: 30px;*/
-	color: #fff;
-	z-index: 1;
+.images-row2 {
+	display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 1260px;
+  height: 260px;
+  margin: auto;
+  /*border: 1px solid black;*/
 }
 
 #product-1 {
-	background-image: url('./images/product-1.jpg');
+  background-image: url('./images/product-1.jpg');
+  width :730px;
+  background-size: 104%;
+  background-position: 80% 3%;
 }
 
 #product-2 {
-	background-image: url('./images/product-2.jpg');
+  background-image: url('./images/product-2.jpg');
+  width: 233px;
+  background-size: 109%;
+  background-position: 50% 22%;
 }
 
 #product-3 {
-	background-image: url('./images/product-3.jpg');
+  background-image: url('./images/product-3.jpg');
+  width: 233px;
+  background-size: 133%;
+  background-position: 50% 100%;
 }
 
 #product-4 {
-	background-image: url('./images/product-4.jpg');
+  background-image: url('./images/product-4.jpg');
+  width: 232px;
+  background-size: 150%;
+  background-position: 20% 100%;
 }
 
 #product-5 {
-	background-image: url('./images/product-5.jpg');
+  background-image: url('./images/product-5.jpg');
+  width: 232px;
+  background-size: 165%;
+  background-position: 23% 100%;
 }
 
 #product-6 {
-	background-image: url('./images/product-6.jpg');
+  background-image: url('./images/product-6.jpg');
+  width: 482px;
+  background-size: 112%;
+  background-position: 40% 18%;
 }
 
 #product-7 {
-	background-image: url('./images/product-7.jpg');
+  background-image: url('./images/product-7.jpg');
+  width: 232px;
+  background-size: 150%;
+  background-position: 21% 100%;
 }
 
+.img-txt1 {
+	position: absolute;
+	margin-left: 1%;
+	margin-top: 25%;
+	font-family: 'Meriweather';
+	font-size: 22px;
+	color: #fff;
+  background-color: black;
+}
 
-
-
-
-
+.img-txt2 {
+	position: absolute;
+	margin-left: 1%;
+	margin-top: 16%;
+	font-family: 'Merriweather';
+	font-size: 22px;
+	color: #fff;
+  background-color: black;
+}
 
 footer {
 	height: 80px;
@@ -115,5 +180,5 @@ footer {
 .footer-text {
 	text-align: left;
 	color: #f9f9f9;
-	font-family: 'Meriweather' serif;
+	font-family: 'Merriweather' serif;
 	font-size: 15px;
